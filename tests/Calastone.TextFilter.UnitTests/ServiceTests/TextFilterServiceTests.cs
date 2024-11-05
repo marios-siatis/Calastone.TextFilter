@@ -22,4 +22,10 @@ public class TextFilterServiceTests
         //Assert
         result.Should().BeTrue();
     }
+
+    [Fact]
+    public void GivenTextFiltersService_WhenProcessingText_ItReadsTextFromFile()
+    {
+        var sampleText = "sample text";
+    }
 }
