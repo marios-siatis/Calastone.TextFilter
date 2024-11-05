@@ -7,8 +7,5 @@ public abstract class WordFilter : IWordFilter
         return false;
     }
 
-    public virtual string Apply(string word)
-    {
-        return "";
-    }
+    public abstract string Apply(string word);
 }
