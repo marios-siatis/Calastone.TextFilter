@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calastone.TextFilter", "Calastone.TextFilter\Calastone.TextFilter.csproj", "{14DE2371-AE37-4F71-BA69-761069FCCC9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calastone.TextFilter.UnitTests", "Calastone.TextFilter.UnitTests\Calastone.TextFilter.UnitTests.csproj", "{C55F56E0-9B9C-49E7-8E2E-729E60741736}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14DE2371-AE37-4F71-BA69-761069FCCC9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14DE2371-AE37-4F71-BA69-761069FCCC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14DE2371-AE37-4F71-BA69-761069FCCC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14DE2371-AE37-4F71-BA69-761069FCCC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55F56E0-9B9C-49E7-8E2E-729E60741736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55F56E0-9B9C-49E7-8E2E-729E60741736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55F56E0-9B9C-49E7-8E2E-729E60741736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55F56E0-9B9C-49E7-8E2E-729E60741736}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
