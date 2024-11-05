@@ -3,12 +3,13 @@ namespace Calastone.TextFilter.Services;
 public class FileReaderService : IFileReaderService
 {
     private readonly string _directory = @"./Text/sample.txt";
-    public IEnumerable<string> ReadFile()
+
+    public async IAsyncEnumerable<string> ReadFileAsync()
     {
-        using (var reader = new StreamReader(_directory))
+        using (StreamReader reader = new StreamReader(_directory))
         {
             string line;
-            while ((line = reader.ReadLine()) != null)
+            while ((line = await reader.ReadLineAsync()) != null)
             {
                 yield return line;
             }

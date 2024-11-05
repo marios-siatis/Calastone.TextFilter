@@ -13,31 +13,33 @@ public class FileReaderServiceTests
     }
 
     [Fact]
-    public void GivenATextFile_WhenFileReaderServiceIsCalled_ThenTheReturnedLinesShouldNotBeEmpty()
+    public async Task GivenATextFile_WhenFileReaderServiceIsCalled_ThenTheReturnedLinesShouldNotBeEmpty()
     {
         //Act
         //Assert
-        foreach (var line in _sut.ReadFile())
+        await foreach (var line in _sut.ReadFileAsync())
         {
             line.Should().NotBeEmpty();
         }
     }
-    
+
     [Fact]
-    public void GivenATextFile_WhenFileReaderServiceIsCalled_ThenTheFirstLineShouldBeCorrectlyReturned()
+    public async Task GivenATextFile_WhenFileReaderServiceIsCalled_ThenTheFirstLineShouldBeCorrectlyReturned()
     {
         //Act
         //Assert
-        var lines= _sut.ReadFile();
-        lines.ElementAt(0).Should().Be("Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice");
+        var lines = await _sut.ReadFileAsync().ToListAsync();
+        lines.ElementAt(0).Should()
+            .Be(
+                "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice");
     }
-    
+
     [Fact]
-    public void GivenATextFile_WhenFileReaderServiceIsCalled_ThenTheLineNumbersCountShouldBeCorrect()
+    public async Task GivenATextFile_WhenFileReaderServiceIsCalled_ThenTheLineNumbersCountShouldBeCorrect()
     {
         //Act
         //Assert
-        var lines= _sut.ReadFile();
+        var lines = await _sut.ReadFileAsync().ToListAsync();
         lines.Count().Should().Be(21);
     }
 }
