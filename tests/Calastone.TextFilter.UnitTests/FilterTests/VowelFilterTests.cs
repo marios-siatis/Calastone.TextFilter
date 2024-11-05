@@ -1,7 +1,7 @@
 using Calastone.TextFilter.Filters;
 using FluentAssertions;
 
-namespace Calastone.TextFilter.UnitTests;
+namespace Calastone.TextFilter.UnitTests.FilterTests;
 
 public class VowelFilterTests
 {

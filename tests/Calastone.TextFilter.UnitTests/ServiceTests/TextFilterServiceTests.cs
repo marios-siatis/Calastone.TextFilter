@@ -1,8 +1,7 @@
-using System.Xml.Serialization;
 using Calastone.TextFilter.Services;
 using FluentAssertions;
 
-namespace Calastone.TextFilter.UnitTests;
+namespace Calastone.TextFilter.UnitTests.ServiceTests;
 
 public class TextFilterServiceTests
 {
