@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calastone.TextFilter", "Calastone.TextFilter\Calastone.TextFilter.csproj", "{14DE2371-AE37-4F71-BA69-761069FCCC9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calastone.TextFilter", "src\Calastone.TextFilter\Calastone.TextFilter.csproj", "{14DE2371-AE37-4F71-BA69-761069FCCC9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calastone.TextFilter.UnitTests", "Calastone.TextFilter.UnitTests\Calastone.TextFilter.UnitTests.csproj", "{C55F56E0-9B9C-49E7-8E2E-729E60741736}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calastone.TextFilter.UnitTests", "tests\Calastone.TextFilter.UnitTests\Calastone.TextFilter.UnitTests.csproj", "{C55F56E0-9B9C-49E7-8E2E-729E60741736}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

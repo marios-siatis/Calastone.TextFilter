@@ -4,13 +4,13 @@ using FluentAssertions;
 
 namespace Calastone.TextFilter.UnitTests;
 
-public class TextFilterServiceTests 
+public class TextFilterServiceTests
 {
     private readonly ITextFilterService _sut;
-  
+
     public TextFilterServiceTests()
     {
-       _sut = new TextFilterService();
+        _sut = new TextFilterService();
     }
     
     [Fact]
@@ -19,7 +19,7 @@ public class TextFilterServiceTests
         //Arrange
         var sampleText = "sample text";
         //Act
-        var result =_sut.Process(sampleText);
+        var result = _sut.Process(sampleText);
         //Assert
         result.Should().BeTrue();
     }

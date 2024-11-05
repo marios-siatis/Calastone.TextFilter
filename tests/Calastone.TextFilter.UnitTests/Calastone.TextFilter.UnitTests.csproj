@@ -23,7 +23,7 @@
         </PackageReference>
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\Calastone.TextFilter\Calastone.TextFilter.csproj" />
+      <ProjectReference Include="..\..\src\Calastone.TextFilter\Calastone.TextFilter.csproj" />
     </ItemGroup>
 
 </Project>
