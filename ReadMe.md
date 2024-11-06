@@ -36,6 +36,6 @@ Alternatively, navigate on the root folder `src/Calastone.TextFilter` where `hos
 func host start --pause-on-error --port 7209
 ```
 
-Then hit the url `http://localhost:7209/api/FilterTextHttpTrigger` to trigger the function.
+Then hit the url `http://localhost:<port>/api/FilterTextHttpTrigger` to trigger the function.
 
 <img width="928" alt="image" src="https://github.com/user-attachments/assets/22127c52-09bc-44f7-91f4-82c9172828ef">
