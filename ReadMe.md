@@ -29,7 +29,7 @@ This C# function HTTP trigger applies multiple text filters to a given string. I
     ```bash
     dotnet test
 
-4. Run through IDE (Rider/VS) or cmd
+4. Run through IDE (Rider/VS) or cmd.
 Alternatively, navigate on the root folder `src/Calastone.TextFilter` where `host.json` exists and run on cmd using the following command
 
 ```
