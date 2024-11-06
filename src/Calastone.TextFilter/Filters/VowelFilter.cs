@@ -10,8 +10,9 @@ public class VowelFilter : WordFilter
     {
         if (string.IsNullOrEmpty(word) || word.Length < 3)
         {
-            return word;
+            base.Apply(word);
         }
+        
         var sanitizedWord = Regex.Replace(word, "[^a-zA-Z]", "");
         var result = IsMiddleIndexVowel(sanitizedWord) ? string.Empty : word;
         return base.Apply(result);

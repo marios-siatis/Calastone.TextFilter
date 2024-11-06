@@ -19,13 +19,13 @@ public class TextFilterServiceTests
     public async Task GivenTextFiltersService_WhenProcessingText_ItAppliesFiltersToTheReadText()
     {
         //Arrange
-        var data = new List<string> { "the quick brown fox jumps over the lazy dog" };
+        var data = new List<string> { "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice" };
         _fileReaderService.Setup(x => x.ReadFileAsync()).Returns(data.ToAsyncEnumerable());
 
         //Act
         var result = await _sut.Process().ToListAsync();
 
         //Assert
-        result.Should().BeEquivalentTo(new string[] {"", "", "", "", "jumps", "", "", "", "", ""});
+        result.Should().BeEquivalentTo(new string[] {"", "", "beginning", "", "", "", "", "", "", "", "", "", "", "", "", "and", "", "", "", "", "", "once", "", "", ""});
     }
 }

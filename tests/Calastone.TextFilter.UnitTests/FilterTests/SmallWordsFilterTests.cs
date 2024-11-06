@@ -50,6 +50,9 @@ public class SmallWordsFilterTests
    [InlineData("a,")]
    [InlineData("a'")]
    [InlineData("a!")]
+   [InlineData("a ")]
+   [InlineData("to ")]
+   [InlineData("of ")]
    public void GivenSmallWordsFilterIsApplied_WhenSmallWordPassedWithPunctuation_ThenReturnsEmptyString(string word)
    {
       var isEnabled = _sut.Apply(word);
