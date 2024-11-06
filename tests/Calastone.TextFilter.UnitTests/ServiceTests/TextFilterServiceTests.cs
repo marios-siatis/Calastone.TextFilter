@@ -26,6 +26,6 @@ public class TextFilterServiceTests
         var result = await _sut.Process().ToListAsync();
 
         //Assert
-        result.Should().BeEquivalentTo(new string[] { "the", "", "", "", "jumps", "", "the", "", "", "" });
+        result.Should().BeEquivalentTo(new string[] {"", "", "", "", "jumps", "", "", "", "", ""});
     }
 }

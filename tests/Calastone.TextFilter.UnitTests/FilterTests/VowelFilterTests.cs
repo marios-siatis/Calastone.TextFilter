@@ -43,10 +43,29 @@ public class VowelFilterTests
     }
     
     [Theory]
+    [InlineData("the!", "the!")]
+    [InlineData("the,", "the,")]
+    public void GivenAWordWithNoVowelsInTheMiddleAndPunctuation_WhenApplyIsCalled_ThenIsShouldReturnTheWord(string word, string expected)
+    {
+        var result = _sut.Apply(word);
+        result.Should().Be(expected);
+    }
+    
+    [Theory]
     [InlineData("clean", "")]
     [InlineData("what", "")]
     [InlineData("currently", "")]
     public void GivenAWordWithVowelsInTheMiddle_WhenApplyIsCalled_ThenIsShouldReturnEmptyString(string word, string expected)
+    {
+        var result = _sut.Apply(word);
+        result.Should().Be(expected);
+    }
+    
+    [Theory]
+    [InlineData("clean!", "")]
+    [InlineData("what.", "")]
+    [InlineData("currently,", "")]
+    public void GivenAWordWithVowelsInTheMiddleAndPunctuation_WhenApplyIsCalled_ThenIsShouldReturnEmptyString(string word, string expected)
     {
         var result = _sut.Apply(word);
         result.Should().Be(expected);

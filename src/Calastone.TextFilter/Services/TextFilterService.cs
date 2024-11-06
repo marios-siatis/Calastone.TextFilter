@@ -23,7 +23,6 @@ public class TextFilterService : ITextFilterService
 
         await foreach (var line in _fileReaderService.ReadFileAsync())
         {
-            var clearedLine = line;
             foreach (var word in line.Split(' '))
             {
                 yield return chainedFilters.Apply(word);

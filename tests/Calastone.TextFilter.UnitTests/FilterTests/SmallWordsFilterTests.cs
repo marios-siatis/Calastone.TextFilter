@@ -44,10 +44,23 @@ public class SmallWordsFilterTests
    }
    
    [Theory]
+   [InlineData("to'")]
+   [InlineData("to!")]
+   [InlineData("to,")]
+   [InlineData("a,")]
+   [InlineData("a'")]
+   [InlineData("a!")]
+   public void GivenSmallWordsFilterIsApplied_WhenSmallWordPassedWithPunctuation_ThenReturnsEmptyString(string word)
+   {
+      var isEnabled = _sut.Apply(word);
+      isEnabled.Should().Be(string.Empty);
+   }
+   
+   [Theory]
    [InlineData("the")]
    [InlineData("that")]
    [InlineData("fly")]
-   public void GivenSmallWordsFilterIsApplied_WhenLargeWordIsPassed_ThenReturnsEmptyString(string word)
+   public void GivenSmallWordsFilterIsApplied_WhenLargeWordIsPassed_ThenReturnsTheWord(string word)
    {
       var isEnabled = _sut.Apply(word);
       isEnabled.Should().Be(word);

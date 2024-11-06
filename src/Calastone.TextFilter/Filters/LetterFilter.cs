@@ -6,7 +6,8 @@ public class LetterFilter : WordFilter
 
     public override string Apply(string word)
     {
-        return word.ToLower().Contains(_letter) ? string.Empty : word;
+        var result = word.ToLower().Contains(_letter) ? string.Empty : word;
+        return base.Apply(result);
     }
 
     public override bool IsEnabled() => true;
