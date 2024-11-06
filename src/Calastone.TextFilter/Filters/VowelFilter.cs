@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using Calastone.TextFilter.Extensions;
 
 namespace Calastone.TextFilter.Filters;
 
@@ -13,8 +14,8 @@ public class VowelFilter : WordFilter
             base.Apply(word);
         }
         
-        var sanitizedWord = Regex.Replace(word, "[^a-zA-Z]", "");
-        var result = IsMiddleIndexVowel(sanitizedWord) ? string.Empty : word;
+      
+        var result = IsMiddleIndexVowel(word.RemoveNonAlphabetic()) ? string.Empty : word;
         return base.Apply(result);
     }
 
