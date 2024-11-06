@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calastone.TextFilter", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calastone.TextFilter.UnitTests", "tests\Calastone.TextFilter.UnitTests\Calastone.TextFilter.UnitTests.csproj", "{C55F56E0-9B9C-49E7-8E2E-729E60741736}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calastone.TextFilter.IntegrationTests", "tests\Calastone.TextFilter.IntegrationTests\Calastone.TextFilter.IntegrationTests.csproj", "{9ADCCF8E-984E-4F7D-B289-AC6C52C16980}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{C55F56E0-9B9C-49E7-8E2E-729E60741736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C55F56E0-9B9C-49E7-8E2E-729E60741736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C55F56E0-9B9C-49E7-8E2E-729E60741736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ADCCF8E-984E-4F7D-B289-AC6C52C16980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ADCCF8E-984E-4F7D-B289-AC6C52C16980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ADCCF8E-984E-4F7D-B289-AC6C52C16980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ADCCF8E-984E-4F7D-B289-AC6C52C16980}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

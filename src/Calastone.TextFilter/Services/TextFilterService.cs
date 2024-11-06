@@ -23,7 +23,9 @@ public class TextFilterService : ITextFilterService
 
         await foreach (var line in _fileReaderService.ReadFileAsync())
         {
-            foreach (var word in line.Split(' '))
+            var sanitisedLine = line.Split(new[] { ' ', '.', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var word in sanitisedLine)
             {
                 yield return chainedFilters.Apply(word);
             }
